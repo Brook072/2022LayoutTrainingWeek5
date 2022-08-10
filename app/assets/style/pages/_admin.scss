@@ -1,0 +1,91 @@
+.page-title{
+  margin-right: 50px;
+  margin-bottom: 0;
+}
+
+.btn{
+  padding: 0;
+  border: none;
+}
+
+.dropdown-toggle::after{
+  display: none;
+}
+
+.mdi-magnify{
+  margin-right: 26px;
+}
+
+.table > :not(caption) > * > *{
+  padding: 0;
+  padding-top: 13.5px;
+  padding-bottom: 13.5px;
+}
+
+td{
+  color: $gray-900;
+}
+
+.col-ID{
+  width: 12%;
+}
+
+.mdi-arrow-down{
+  font-size: 18px;
+  line-height: 1;
+}
+
+.col-name{
+  width: 19.6%;
+}
+
+.col-email{
+  width: 34.7%;
+}
+
+.col-verified-status{
+  width: 25%;
+}
+
+.page-link{
+  color: $gray-900;
+  border:1px solid $success;
+  .mdi{
+    color: $success;
+  }
+}
+
+.page-item.active .page-link{
+  color: white;
+  background-color: $success;
+  border:1px solid $success
+}
+
+.user-card-picture{
+  width: 141px;
+  height: 164px;
+  img{
+    object-fit: cover;
+  }
+}
+
+.verified-text{
+  background-color: $light;
+}
+
+.modal-dialog{
+  max-width: 480px;
+}
+
+.form-part{
+  position: relative;
+  margin-bottom: 49px;
+  &::after{
+    content: '';
+    position: absolute;
+    border: 1px solid $gray-400;
+    width: 100%;
+    left: 0;
+    bottom: -24.5px
+  }
+}
