@@ -12307,11 +12307,21 @@ html, body {
   min-width: 296px;
 }
 
+.logo {
+  display: block;
+  background-image: url("/assets/images/logo-ANSWER.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 40px;
+  width: 183px;
+}
+
 .menu-list {
   padding-left: 2rem;
 }
 
 .menu-list a {
+  width: 100%;
   color: inherit;
   text-decoration: none;
 }
@@ -12325,12 +12335,12 @@ html, body {
   border: none;
 }
 
-.menu-list .list-group-item.active {
+.menu-list .list-group-item-action.active, .menu-list .list-group-item-action:hover {
   color: #198754;
   position: relative;
 }
 
-.menu-list .list-group-item.active::before {
+.menu-list .list-group-item-action.active::before, .menu-list .list-group-item-action:hover::before {
   content: '';
   height: 100%;
   position: absolute;
