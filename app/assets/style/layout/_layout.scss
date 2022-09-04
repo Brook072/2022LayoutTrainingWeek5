@@ -2,9 +2,19 @@
     min-width: 296px;
 }
 
+.logo{
+    display: block;
+    background-image: url('/assets/images/logo-ANSWER.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 40px;
+    width: 183px;
+}
+
 .menu-list{
     padding-left: $spacer * 2;
     a{
+        width: 100%;
         color:inherit;
         text-decoration: none;
     }
@@ -16,7 +26,7 @@
         margin-bottom: $spacer * 1.5;
         border: none;
     }
-    .list-group-item.active{
+    .list-group-item-action.active, .list-group-item-action:hover{
         color: $success;
         position: relative;
         &::before{

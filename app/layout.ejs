@@ -14,55 +14,57 @@
   <body>
     <main>
       <div class="d-flex flex-row">
-        <div class="menu bg-light py-5 d-flex flex-column">
-          <h1><img src="./assets/images/logo-ANSWER.svg" alt="" class="logo ps-5 mb-5"></h1>
+        <div class="menu bg-light py-5 d-flex flex-column vh-100">
+          <h1><a href="/" class="logo ps-5 mb-5"></a></h1>
           <div class="menu-wrapper d-flex flex-column justify-content-between flex-grow-1">
-            <ul class="list-group menu-list">
-              <li class="list-group-item d-flex align-items-center py-1">
-                <a href="#">
-                  <span class="mdi mdi-chart-box fs-4 lh-1 me-3"></span>
-                  <span>Dashboard</span>
-                </a>
-              </li>
-              <li class="list-group-item d-flex align-items-center py-1">
-                <a href="#">
-                  <span class="mdi mdi-forum fs-4 lh-1 me-3"></span>
-                  <span>Question</span>
-                </a>
-              </li>
-              <% if(title == "Assignment"){ -%>
-              <li class="list-group-item d-flex align-items-center py-1 active">
-              <% } else { -%>  
-              <li class="list-group-item d-flex align-items-center py-1">
-              <% } -%>
-                <a href="index.html">
-                  <span class="mdi mdi-clipboard-text fs-4 lh-1 me-3"></span>
-                  <span>Assignment</span>
-                </a>
-              </li>
-              <li class="list-group-item d-flex align-items-center py-1">
-                <a href="#">
-                  <span class="mdi mdi-clipboard-play-multiple fs-4 lh-1 me-3"></span>
-                  <span>Course</span>
-                </a>
-              </li>
-              <% if(title == "Admin"){ -%>
-              <li class="list-group-item d-flex align-items-center py-1 active">
-              <% } else { -%>  
-              <li class="list-group-item d-flex align-items-center py-1">
-              <% } -%>
-                <a href="admin.html">
-                  <span class="mdi mdi-account-multiple fs-4 lh-1 me-3"></span>
-                  <span>Admin</span>
-                </a>
-              </li>
-              <li class="list-group-item d-flex align-items-center py-1">
-                <a href="#">
-                  <span class="mdi mdi-cog fs-4 lh-1 me-3"></span>
-                  <span>Settings</span>
-                </a>
-              </li>
-            </ul>
+            <nav>
+              <ul class="list-group menu-list">
+                <li class="list-group-item list-group-item-action d-flex align-items-center py-1">
+                  <a href="#">
+                    <span class="mdi mdi-chart-box fs-4 lh-1 me-3"></span>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center py-1">
+                  <a href="#">
+                    <span class="mdi mdi-forum fs-4 lh-1 me-3"></span>
+                    <span>Question</span>
+                  </a>
+                </li>
+                <% if(title == "Assignment"){ -%>
+                <li class="list-group-item list-group-item-action d-flex align-items-center py-1 active">
+                <% } else { -%>  
+                <li class="list-group-item list-group-item-action d-flex align-items-center py-1">
+                <% } -%>
+                  <a href="index.html">
+                    <span class="mdi mdi-clipboard-text fs-4 lh-1 me-3"></span>
+                    <span>Assignment</span>
+                  </a>
+                </li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center py-1">
+                  <a href="#">
+                    <span class="mdi mdi-clipboard-play-multiple fs-4 lh-1 me-3"></span>
+                    <span>Course</span>
+                  </a>
+                </li>
+                <% if(title == "Admin"){ -%>
+                <li class="list-group-item list-group-item-action d-flex align-items-center py-1 active">
+                <% } else { -%>  
+                <li class="list-group-item list-group-item-action d-flex align-items-center py-1">
+                <% } -%>
+                  <a href="admin.html">
+                    <span class="mdi mdi-account-multiple fs-4 lh-1 me-3"></span>
+                    <span>Admin</span>
+                  </a>
+                </li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center py-1">
+                  <a href="#">
+                    <span class="mdi mdi-cog fs-4 lh-1 me-3"></span>
+                    <span>Settings</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
             <div class="user-info-wrapper d-flex flex-row align-items-center ps-5">
               <div class="picture-size me-3">
                 <img src="./assets/images/andychen.jpeg" alt="" class="user-picture">

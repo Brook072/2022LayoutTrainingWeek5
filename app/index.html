@@ -83,15 +83,13 @@ current: index
         </div>
         <div class="assignment-content">
             <p class="fs-7 text-gray-600 text-end mb-2">2 comments</p>
-            <ul class="list-group">
-                <li class="list-group-item bg-gray-400 d-flex align-items-center justify-content-between px-3 active" aria-current="true">
+            <div class="card">
+                <div class="card-header bg-gray-400 d-flex align-items-center justify-content-between px-3 active">
                     <div>
                         <p class="fs-7 text-gray-900 fw-regular mb-1">Chapter Assignment 2 / HTML&CSS</p>
-                        <p class="text-gray-900 fw-bold m-0">Please check this file for me, thanks!</p>
-                    </div>
-                    <span class="mdi mdi-dots-vertical fs-4 lh-1"></span>
-                </li>
-                <li class="list-group-item bg-gray-400 px-5">
+                        <p class="text-gray-900 fw-bold m-0">Please check this file for me, thanks!</p></div>
+                  </div>
+                <div class="card-body pb-0">
                     <div class="d-flex mb-5">
                         <div class="picture-size me-2">
                             <img src="./assets/images/emilywang.jpeg" alt="" class="user-picture">
@@ -102,7 +100,7 @@ current: index
                                 <p class="text-secondary fw-regular fs-8 mb-0">10:38 AM (4 hours ago)</p>
                             </div>
                             <div class="mb-3">
-                                <span class="fs-7 lh-1.5">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the &nbsp; <a href="#" class="style-name text-success text-bg-light text-decoration-none">img</a> &nbsp;? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br>What is the gap or extra space below image?</span>
+                                <span class="fs-7 lh-1.5">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the &nbsp; <code class="style-name text-success text-bg-light text-decoration-none">img</code> &nbsp;? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br>What is the gap or extra space below image?</span>
                             </div>
                             <div>
                                 <button type="button" class="attachment btn btn-light border border-1 border-gray-400 rounded rounded-1">
@@ -128,16 +126,25 @@ current: index
                             <div>
                                 <span class="fs-7 lh-1.5">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br>You can:<br><br></span>
                                 <ul>
-                                    <li class="fs-7 lh-1.5">adjust the &nbsp;<a href="#" class="style-name text-success text-bg-light text-decoration-none">vertical-align</a> &nbsp; of the image to position it elsewhere (e.g. the &nbsp;<a href="#" class="style-name text-success text-bg-light text-decoration-none">middle</a> &nbsp; ) or</li>
-                                    <li class="fs-7 lh-1.5">change the &nbsp;<a href="#" class="style-name text-success text-bg-light text-decoration-none">display</a> &nbsp; so it isn’t inline.</li>
+                                    <li class="fs-7 lh-1.5">adjust the &nbsp;<code class="style-name text-success text-bg-light text-decoration-none">vertical-align</code> &nbsp; of the image to position it elsewhere (e.g. the &nbsp;<code class="style-name text-success text-bg-light text-decoration-none">middle</code> &nbsp; ) or</li>
+                                    <li class="fs-7 lh-1.5">change the &nbsp;<code class="style-name text-success text-bg-light text-decoration-none">display</code> &nbsp; so it isn’t inline.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </li>
+                </div>
                 <div class="reply-textarea collapse multi-collapse">
                     <div class="list-group-item bg-gray-400 d-flex align-items-center py-3 active" aria-current="true">
-                        <button type="button" class="attachment btn btn-transparent">Body Text</button>
+                        <div class="dropdown">
+                            <a class="attachment btn btn-transparent dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Body Text
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Sans-serif</a></li>
+                              <li><a class="dropdown-item" href="#">Noto Sans TC</a></li>
+                              <li><a class="dropdown-item" href="#">Times New Roman</a></li>
+                            </ul>
+                          </div>
                         <span class="mdi mdi-format-bold fs-4 lh-1 me-3"></span>
                         <span class="mdi mdi-format-italic fs-4 lh-1 me-3"></span>
                         <span class="mdi mdi-format-list-bulleted fs-4 lh-1 me-3"></span>
@@ -154,7 +161,7 @@ current: index
                         </div>
                     </div>
                 </div>
-            </ul>
+              </div>
             <div class="function-button-wrapper align-items-center justify-content-between multi-collapse collapse show" id="reply">
                 <div>
                     <span class="mdi mdi-chevron-left fs-4 lh-1 me-4"></span>
